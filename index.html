@@ -127,94 +127,73 @@
         
         <div class="content">
             <div class="highlight">
-                <p><strong>Privacy First:</strong> Pantry Pal is designed with your privacy in mind. We collect minimal data, store everything locally on your device, and never share your information with third parties.</p>
+                <p><strong>Privacy Commitment:</strong> Pantry Pal is built on a "Privacy First" architecture. We prioritize local storage to ensure your data remains under your control at all times.</p>
             </div>
             
-            <h2>Information We Collect</h2>
-            <p>Pantry Pal collects and processes the following information:</p>
+            <h2>1. Information We Collect</h2>
+            <p>Pantry Pal collects the following data to provide its core services:</p>
             <ul>
-                <li><strong>Device Identifier:</strong> A unique identifier generated for your device to keep your pantry data separate and secure</li>
-                <li><strong>Pantry Items:</strong> Food items you add, including names, categories, and expiry dates</li>
-                <li><strong>Camera Access:</strong> Used exclusively for barcode scanning to identify products</li>
-                <li><strong>App Usage Data:</strong> Basic functionality usage to improve the app experience</li>
+                <li><strong>Device Identifier:</strong> A non-persistent unique ID used solely for app integrity and local data separation.</li>
+                <li><strong>Inventory Content:</strong> Product names, categories, and expiry dates provided by the user.</li>
+                <li><strong>Camera Data:</strong> Used in real-time for barcode scanning. No images are saved or transmitted.</li>
+                <li><strong>App Performance Data:</strong> Anonymized usage statistics to diagnose crashes and improve functionality.</li>
             </ul>
             
-            <h2>How We Use Your Information</h2>
-            <p>Your information is used solely to provide and improve the Pantry Pal service:</p>
+            <h2>2. How We Use Your Information</h2>
+            <p>Your data is used exclusively to:</p>
             <ul>
-                <li>Store and manage your pantry inventory locally on your device</li>
-                <li>Send you notifications about expiring items</li>
-                <li>Scan barcodes to automatically identify products</li>
-                <li>Provide personalized app functionality</li>
+                <li>Maintain your personal food inventory locally.</li>
+                <li>Generate local notifications for expiring items.</li>
+                <li>Match barcodes with product names via third-party APIs.</li>
             </ul>
             
-            <h2>Data Storage and Security</h2>
-            <p>We prioritize your data security:</p>
+            <h2>3. Data Storage & Security</h2>
             <ul>
-                <li><strong>Local Storage:</strong> All your pantry data is stored locally on your device</li>
-                <li><strong>No Cloud Sync:</strong> Your data never leaves your device unless you explicitly choose to back it up</li>
-                <li><strong>Secure Database:</strong> Data is stored in a secure local database with device-level encryption</li>
-                <li><strong>No Account Required:</strong> No personal accounts, passwords, or login credentials needed</li>
+                <li><strong>Encryption in Transit:</strong> Any data sent externally (such as barcode lookups) is encrypted using modern cryptographic protocols (HTTPS).</li>
+                <li><strong>Local Storage:</strong> All inventory data is stored in a secure local database on your device.</li>
+                <li><strong>No Cloud Sync:</strong> We do not automatically sync your data to any cloud servers.</li>
+                <li><strong>No Account Required:</strong> We do not require usernames, passwords, or email registration.</li>
             </ul>
             
-            <h2>Permissions We Request</h2>
-            <p>Pantry Pal requests the following permissions:</p>
+            <h2>4. Third-Party Services</h2>
+            <p>We use a limited number of services to enhance the app:</p>
             <ul>
-                <li><strong>Camera:</strong> To scan product barcodes for easy item entry</li>
-                <li><strong>Notifications:</strong> To alert you about items nearing expiry</li>
-                <li><strong>Storage:</strong> To save your pantry data locally on your device</li>
+                <li><strong>OpenFoodFacts API:</strong> Used to identify products. No personal data is shared with this service.</li>
+                <li><strong>Supabase (Client-Side):</strong> Used as a local data management library. Data remains on your device.</li>
             </ul>
             
-            <h2>Third-Party Services</h2>
-            <p>We use minimal third-party services:</p>
+            <h2>5. Data Deletion & Rights</h2>
+            <p>In accordance with Google Play's Data Safety requirements, you have full control over your data:</p>
             <ul>
-                <li><strong>OpenFoodFacts API:</strong> To retrieve product information from barcodes (no personal data shared)</li>
-                <li><strong>Supabase:</strong> For local database functionality (data remains on your device)</li>
+                <li><strong>Immediate Deletion:</strong> You can delete any item or the entire database within the app settings.</li>
+                <li><strong>Automatic Deletion:</strong> Uninstalling the application will permanently remove all locally stored pantry data from your device.</li>
+            </ul>
+
+            <h2>6. Permissions</h2>
+            <ul>
+                <li><strong>Camera:</strong> Required for barcode scanning functionality.</li>
+                <li><strong>Notifications:</strong> Required to alert you about expiring food items.</li>
             </ul>
             
-            <h2>Data Sharing and Disclosure</h2>
-            <p>We do not sell, trade, or share your personal information with third parties. Your data may only be disclosed if:</p>
-            <ul>
-                <li>Required by law or legal process</li>
-                <li>Necessary to protect our rights or safety</li>
-                <li>You explicitly consent to sharing</li>
-            </ul>
+            <h2>7. Children's Privacy</h2>
+            <p>Pantry Pal does not knowingly collect personal information from children under 13. If you believe a child has provided us with data, please contact us for immediate removal.</p>
             
-            <h2>Children's Privacy</h2>
-            <p>Pantry Pal is not intended for children under 13. We do not knowingly collect personal information from children under 13. If we become aware that we have collected such information, we will delete it immediately.</p>
+            <h2>8. International Data Transfers</h2>
+            <p>As data is stored locally on your device, no international transfers of your personal information occur.</p>
             
-            <h2>Your Rights and Choices</h2>
-            <p>You have the following rights regarding your data:</p>
-            <ul>
-                <li><strong>Access:</strong> View all data stored in the app</li>
-                <li><strong>Delete:</strong> Remove individual items or clear all data</li>
-                <li><strong>Control:</strong> Disable notifications or camera access at any time</li>
-                <li><strong>Uninstall:</strong> Completely remove the app and all associated data</li>
-            </ul>
-            
-            <h2>Data Retention</h2>
-            <p>Your data is retained locally on your device until you:</p>
-            <ul>
-                <li>Delete individual items or clear all data</li>
-                <li>Uninstall the application</li>
-                <li>Reset your device</li>
-            </ul>
-            
-            <h2>Changes to This Policy</h2>
-            <p>We may update this privacy policy from time to time. We will notify you of any changes by posting the new policy in the app and updating the "Last Updated" date below. Your continued use of the app after changes constitutes acceptance of the updated policy.</p>
-            
-            <h2>International Data Transfers</h2>
-            <p>Since all data is stored locally on your device, there are no international data transfers. Your data remains in your physical possession at all times.</p>
+            <h2>9. Changes to This Policy</h2>
+            <p>We may update this policy to reflect changes in our practices or for legal reasons. We will notify you of changes by updating the "Last Updated" date below.</p>
         </div>
         
         <div class="contact">
             <h2>Contact Us</h2>
-            <p>If you have any questions about this Privacy Policy or our data practices, please contact us:</p>
-            <p><strong>Google Play Store:</strong> Visit our app listing and use the developer contact information</p>
+            <p>For questions regarding this policy or your data, please contact the developer at:</p>
+            
+            <p><strong>Google Play Store:</strong> Visit our app listing contact section.</p>
         </div>
         
         <div class="last-updated">
-            <p>Last Updated: January 4, 2026</p>
+            <p>Last Updated: January 20, 2026</p>
         </div>
     </div>
 </body>
